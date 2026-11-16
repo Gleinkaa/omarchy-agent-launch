@@ -1,0 +1,10 @@
+{
+  "title": "Agent Launch",
+  "subtitle": "Pick a harness, model and effort",
+  "harness": "Harness",
+  "model": "Model",
+  "effort": "Effort",
+  "copy": "Copy command",
+  "copied": "Copied",
+  "tooltip": "Agent launch command"
+}

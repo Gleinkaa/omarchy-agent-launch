@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "nik.agent-launch",
+  "name": "Agent Launch",
+  "version": "0.1.0",
+  "author": "nik",
+  "license": "MIT",
+  "description": "Pick an agent harness, model and effort level, and copy the launch command to the clipboard.",
+  "kinds": ["bar-widget"],
+  "activation": "on-demand",
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Agent Launch",
+    "description": "Build a claude / codex / pi / hermes launch command and copy it.",
+    "category": "AI",
+    "aliases": ["agent", "launch", "harness", "model", "effort"],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "closeOnCopy": true
+    },
+    "schema": [
+      { "key": "closeOnCopy", "type": "boolean", "label": "Close panel after copying", "defaultValue": true }
+    ]
+  }
+}
